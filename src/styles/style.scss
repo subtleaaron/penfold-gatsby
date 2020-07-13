@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500;1,700&display=swap');
+
+$font:"Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+
+//Colors
+$white: #ffff;
+$black: #000;
+$off-white: #FCFCFC;
+$pink-solid: #FF004D;
+$pink-hover: #dd0042;
+$pink-gradient: linear-gradient(0deg, #98094E -99.18%, #FF3D5F 100%);
+$pink-background: #FCF1F4;
+
+html,body{
+    font-family: $font;
+    font-size: 16px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    
+    @media(max-width: 1200px){
+        width: 80%;
+    }
+    @media(max-width: 600px){
+        width: 90%;
+    }
+
+}
+
+//Header
+
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    .inner-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        .logo{
+            a{
+                font-weight: 600;
+                text-decoration: none;
+                color: $black;
+                
+            }
+        }
+
+        .navigation{
+            nav{
+                a{
+                    margin: 0 20px;
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: 300;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    &:hover{
+                        color: $pink-solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Banner
+.banner{
+    margin-top: 80px;
+    .row{
+        margin-top: 280px;
+        .main-text{
+            font-size: 1.75rem;
+            line-height: 1.75em;
+            width: 600px;
+
+            @media (max-width: 600px){
+                width: 100%;
+                font-size: 1.5rem;
+            }
+        }
+        .main-blurb{
+            font-size: 1.25rem;
+            line-height: .75em;
+        }
+
+        .main-cta{
+            background-color: $pink-solid;
+            width: 300px;
+            height: 50px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            
+            a{  
+                width: 300px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                font-size: 1.25rem; 
+                font-weight: 200;
+                text-decoration: none;
+                color: $white;
+                justify-content: center;
+                border-radius: 25px;
+                
+                &:hover{
+                    background-color: $pink-hover;
+                }
+            }
+        }
+        
+    }
+}
+
+//Projects Preview
+.projects-preview-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    .project-preview{
+        width: 100%;
+
+        .project-preview-image{
+            height: 450px;
+            border-radius:25px;
+
+            img{
+                border-radius: 25px;
+            }
+        }
+    }
+
+}

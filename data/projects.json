@@ -1,0 +1,17 @@
+[{
+    "id": "0",
+    "title": "Scopic Freelancers",
+    "slug": "scopicfreelancers",
+    "url": "https://example.com",
+    "image": "./images/scopicfreelancers.jpg",
+    "description": "Fully functioning agency website, displaying services and large resposive gallery."
+},
+{
+    "id": "1",
+    "title": "Distorted Clothing",
+    "slug": "distortedclothing",
+    "url": "https://example.com",
+    "image": "./images/distortedclothing.jpg",
+    "description": "Modern eCommerce website, including dynamic stock management and order tracking."
+}
+]
